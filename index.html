@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Simulador de Financiamento - Tabela SAC</title>
+        <style>
+            #titulos1{
+                font-size: 25px;
+                color:turquoise;
+                font-weight: bold;
+            }
+            #titulos2{
+                font-size: 25px;
+                color:turquoise;
+                font-weight: bold;
+            }
+            #titulos3{
+                font-size: 15px;
+                color:turquoise;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1" width="500px">
+            <caption id="titulos1">Simulação de Financiamento</caption>
+            <br><br>
+            <thead align="center">
+                <tr>
+                    <th>Valor:</th>
+                    <th>Prazo(anos):</th>
+                    <th>Juros ao ano:</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <td><input id="n1" type="number" /></td>
+                <td><input id="n2" type="number" /></td>
+                <td><input id="n3" type="number" /></td>
+            </tbody>
+        </table>
+        <button onclick="opera()">Simular</button>
+        <table border="1"cellspacing="2"cellpadding="10" width="555px">
+            <caption id="titulos2">Resultado</caption><br><br>
+            <thead align="center">
+                <tr>
+                    <th >Prazo(meses):</th>
+                    <th >Juros ao mês:</th>
+                    <th>Juros acumulados:</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <td><span id="meses"></span></td>
+                <td><span id="juros"></span></td>
+                <td><span id="acum"></span></td>
+            </tbody>
+        </table>
+    </table>
+    <br>
+    <table border="0"cellspacing="2"cellpadding="10" width="555px" >
+        <thead align="center">
+            <tr>
+                <th id="titulos3">Prestação</th>
+                <th id="titulos3">Amortização</th>
+                <th id="titulos3">Juros</th>
+                <th id="titulos3">Total</th>
+            </tr>
+        </thead>
+        <tbody id="tbody" align="center" >
+
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+    </body>
+</html>
