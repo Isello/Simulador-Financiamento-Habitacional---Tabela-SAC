@@ -64,6 +64,3 @@ function listaTabela(){
         td4.innerText = financiamento.prestas[i].toFixed(2);
     }
 }
-
-
-
